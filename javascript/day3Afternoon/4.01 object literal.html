@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Creating a JavaScript Object.</p>
+<p id="demo"></p>
+
+<script>
+    
+    var literal = {
+        
+        propertyone: 'One',
+        propertytwo: 'two',
+        propertythree: 'three'
+        
+    }
+    console.log(literal);
+    document.getElementById("demo").innerHTML=literal.propertyone + " " + literal.propertytwo + " " + literal.propertythree;
+    
+    
+    /*Create an object variable and output each object property in a concatenated string onto the webpage*/
+    
+    
+    /*Create an object with properties and a method, Access the method*/
+    
+    var property = {
+        
+        height: 160,
+        weight:200,
+        build:"yep",
+        combined: function (){
+        return this.height + " " + this.build;
+            }
+
+    }
+     
+    document.getElementById("demo").innerHTML = property.combined();
+        
+        
+    
+    /*Create an object variable with 3 properties: firstname, surname, fullname. For the fullname value create a method which returns the firstname and surbane and display on the webpage*/
+    
+    var Kay = {
+        
+        firstname: 'Kelly',
+        surname: 'Anne',
+        combined: function (){ 
+        return this.firstname + " " + this.surname;
+        
+        }
+}
+    document.getElementById("demo").innerHTML = Kay.combined();
+    
+    
+    /*Create an object within an object (nested) and display a nested object property on the webpage */
+    
+    var One = {
+        
+        props:"Height",
+        props2: "weight",
+        property: {
+        more: "Changed",
+            more2: "changed2"
+        
+    }
+    } 
+        document.getElementById("demo").innerHTML = One.property.more;
+    
+    
+ /*        
+        
+        talk({
+       firstname: 'Jane',
+           lastname: 'Doe'
+       
+       
+       }) //parsing in our own object 
+        
+        Rob.address2 = {
+            
+            street:'350 minories penthouse',
+            
+          
+        }*/
+    
+
+</script>
+
+</body>
+</html>

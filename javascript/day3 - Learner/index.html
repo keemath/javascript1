@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    
+    
+    
+    
+    
+    
+    
+    
+    </head>
+    
+    
+    
+    
+<body>
+    
+    <script>
+//one way to declare an object
+ /*   var person = new Object();*/
+    
+        //the [] brackets is an operator takes the person object and sets the property using a string
+   /*     person["firstname"] = "Rob";
+        person["lastname"] = "Green";
+        
+        console.log(person);*/
+        
+        //create a var to hold the persons name
+        
+  /*      var firstNameProperty = " First Name";*/
+        
+        // when calling a string use the [] brackets
+        /*console.log(person[firstNameProperty]);*/
+        
+        
+        // the better way to do it (both ways work)
+        // the below is better practice
+        
+      /*  console.log(person.firstname);
+        console.log(person.lastname);*/
+        
+        
+var Rob = { //this is the new object 
+    
+    firstname: 'Rob', // name of the value pair
+    lastname: 'Green',
+    
+    address:{ //wherever the syntax {} is seen the parser views it as a new object
+        
+        street: '150 minories',
+        city:'London',
+        floor: '4'
+    }
+    
+}   
+
+function talk(person){ //creating a function that calls the first name
+    
+    //the paramter is looking for an object
+    console.log('Hi' + " "+person.firstname);
+    
+    
+}
+    
+        //we are calling the object and giving it our object 'Rob'
+        talk(Rob);
+        
+        talk({
+       firstname: 'Jane',
+           lastname: 'Doe'
+       
+       
+       }) //parsing in our own object 
+        
+        Rob.address2 = {
+            
+            street:'350 minories penthouse',
+            
+          
+        }
+  console.log(Rob);
+    </script>
+    </body>
+</html>

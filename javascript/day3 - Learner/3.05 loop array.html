@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title>Javascript add and display 10 members of an array</title>
+
+</head>
+<body>
+<h1>Javascript</h1>
+<h2>Display 10 members of an array using for loop</h2>
+<button type="button" onclick="looparray()">Display member from country array</button>
+<p id="myarray"></p>
+
+<script>
+    
+    function looparray(){
+
+var myarray1 = ['cat','dog','lizard','kangaroo','snake','rat','ladybug','ant','sheep','koala'];
+
+var i = 0;
+/*var text = " ";*/
+
+    for(i=0;i<=10;i++){
+        myarray+=i;
+    }
+        document.getElementById("myarray").innerHTML= myarray1;
+}
+
+</script>
+
+
+</body>
+</html>
+
+
+<!--var text = "";
+    var i;
+    
+    for (i=1; i<=10; i++){ 
+    text += i; 
+    }
+        for (j=1; j <=10; j++) {
+    text += j; } 
+    document.getElementById("result6").innerHTML = text;
+            }*/-->

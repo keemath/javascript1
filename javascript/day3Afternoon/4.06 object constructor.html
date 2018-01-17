@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+
+
+<script>
+    
+    /*Build an object contructor, Create 2 instances of the object, Display the properties of the object instances on the webpage*/
+
+function person(first,last){
+    this.firstname = first; 
+    this.lastname = last;
+    
+}
+    
+    var myBrother = new person("Stormzy", "Mike");
+    var mySister = new person ("Robyn", "Fenty");
+    
+    document.getElementById("demo").innerHTML = myBrother.firstname + " " + myBrother.lastname;
+    
+    document.getElementById("demo2").innerHTML = mySister.firstname + " " + mySister.lastname;
+    
+</script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title>Javascript pop element from array</title>
+
+</head>
+<body>
+<h1>Javascript labs</h1>
+<h2>Lab 22 - Pop element from array</h2>
+<input id="lab22input" />
+<!--  add element to end of array -->
+<input id="button1" type="button" value="Push member to array" onclick="lab22push(lab22input.value)" />
+<!--  remove last element of the array -->
+<input id="button2" type="button" value="Pop member from array" onclick="lastpop()" />
+<!--  remove the first element of the array -->
+<input id="button3" type="button" value="Shift member from array" onclick="firstshift()" />
+<!--  add to the first element of the array -->
+<input id="button4" type="button" value="unshift member from array" onclick="firstunshift(lab22input.value)" />
+
+<p id="lab22result"></p>
+<p id="lab22result"></p>
+	
+<script>
+    
+    
+    /*Add and remove first and last elements on and off an array using shift, unshift, push and pop methods*/
+    
+    /*var event1=document.getElementById("button1")*/
+    
+    var myArray = ['Numberone ', 'Numbertwo ', 'Numberthree ', 'Numberfour '];
+    
+    /*push*/
+    
+    
+    function lab22push(a){
+        
+      { 
+    
+    var lab22push = myArray.push(a);
+        
+        
+        document.getElementById("lab22result").innerHTML = myArray;    
+    
+        
+    }
+    }
+    
+    /*pop*/
+    function lastpop(a){
+        
+        {
+            
+            var lastpop = myArray.pop(a);
+            
+            document.getElementById("lab22result").innerHTML = myArray;
+        }
+    }
+    
+    /*shift*/
+    function firstshift(a){
+        
+        {
+            
+            var firstshift = myArray.shift(a);
+            
+            document.getElementById("lab22result").innerHTML = myArray;
+        }
+    }
+    
+    /*unshift*/
+    function firstunshift(a){
+        
+        {
+            
+            var firstunshift = myArray.unshift(a);
+            
+            document.getElementById("lab22result").innerHTML = myArray;
+        }
+    }   
+
+</script>
+
+</body>
+</html>

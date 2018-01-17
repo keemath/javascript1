@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </head>
+
+
+
+<body>
+
+<!-- span id = demo that allows JS access-->
+    
+<form>
+    
+    <!--collect 2 number values from a user and display the sum of those values on a webpage-->
+    
+    <span> Enter a number:</span>
+    <input type="text" id="input1">
+<span> Enter a second number: 
+    </span>    
+     <input type="text" id="input2">
+    
+    <span> Enter a third number: 
+    </span>    
+     <input type="text" id="input3">
+    
+    </form>
+<div>
+<button id="button1"> calculate </button>
+</div>
+    
+    <div id ="result"> </div>
+
+<script>
+    
+//window.alert('hello');
+    
+/*document.getElementById("demo").innerHTML = "hello";
+console.log(demo);    */
+    
+   /* var myAddress = {
+        
+        Street: 'minories',
+        Number: 104, 
+        building:
+        {
+            floor:4,
+        security:'fob'
+    }     */
+     
+        /*declares a variable listening for button 1*/
+   var event1=document.getElementById("button1");
+    
+
+    
+    /*event1.addEventListener('click',addUp,false);
+    
+   function addUp(){  */
+        /*alert("event listener is working");**/
+        
+       /* two variables that hold the numbers tha have been entered by the user*/
+        /*var userinput1 = document.getElementById("input1").value;
+        var userinput2 = document.getElementById("input2").value;
+        */
+        //two user input variables 
+       
+       /*parses variables into numbers - currently a string*/
+        
+        /*var num1 = parseInt(userinput1);
+        var num2 = parseInt(userinput2);
+        var num3 = 'This is not a number';
+        */
+        /*for if numbers are the same or different*/
+        
+        /*a variable that will hold the total and do the addition*/
+        /*var equalTo = "Numbers are the same";
+        var notEqualTo = "Numbers are different"
+        
+        if (num1 === num2){
+            
+            document.getElementById("result").innerHTML = equalTo; 
+        }
+        
+        else if (num2 !== num1) {
+            document.getElementById("result").innerHTML = notEqualTo;
+        }
+       */
+        /*else if (num1 === num2) {
+            
+             document.getElementById("result").innerHTML = num2
+        +equalTo;
+        
+        }*/
+       
+      /* else {
+           document.getElementById("result").innerHTML = num3;
+       }
+   }; */
+    
+    
+    /*Collect a single number value from the user and display on the webpage the number one less and the number one more than the number entered*/
+    
+ /*    event1.addEventListener('click',addUp,false);
+    
+   function addUp(){  */
+        /*alert("event listener is working");**/
+        
+       /* two variables that hold the numbers tha have been entered by the user*/
+/*        var userinput1 = document.getElementById("input1").value;
+        var userinput2 = document.getElementById("input2").value;*/
+        
+        //two user input variables 
+       
+       /*parses variables into numbers - currently a string*/
+        
+/*        var num1 = parseInt(userinput1) +1;
+        var num2 = parseInt(userinput1) -1;
+        var num3 = parseInt(userinput1);*/
+        
+        /*for if numbers are the same or different*/
+        
+        /*a variable that will hold the total and do the addition*/
+        /*var Number1Plus1 = 1;
+        var Number2Plus1 = 1;*/
+       
+       /*option one*/
+       
+      /* document.getElementById("result").innerHTML=num2+" "+ num3 + " " + num1;*/
+       
+       /*option two*/
+/*       
+       var outputMessage = num1 + num2 + num3;
+       document.getElementById("result") = outputMessage;
+  
+       
+   }*/
+    
+    /*collect 3 numbers from the user and display on the webpage the difference between the values of the 2 calculations below (a+b*c and (a+b+c)*/
+    
+    
+/*        event1.addEventListener('click',addUp,false);
+    
+   function addUp(){  
+       
+   var userinput1 = document.getElementById("input1").value;
+        var userinput2 = document.getElementById("input2").value;
+       var userinput3 = document.getElementById("input3").value
+       
+    var a = parseInt(userinput1);
+        var b = parseInt(userinput2);
+        var c = parseInt(userinput3);
+       
+       var calc1 = (a+b)*c;
+       var calc2 = (a+b+c);
+       var difference = calc1-calc2;
+       var invalid = "This is not a number";
+       
+       if(isNaN(a) || isNaN(b) || isNaN(c))
+ {
+     document.getElementById("result").innerHTML=invalid;
+ }*/   /*    if (calc1 > calc2){
+            
+            document.getElementById("result").innerHTML = equalTo; 
+        }
+        
+        else if (num2 !== num1) {
+            document.getElementById("result").innerHTML = notEqualTo;
+        }*/
+       
+  /*     if (a (isNaN) || b (isNaN) || c (isNaN)) {
+     document.getElementById("result").innerHTML=invalid;
+           } 
+       else {*/
+           /*else {
+           document.getElementById("result").innerHTML=difference;
+               }*/
+      /* }*/
+
+ /*  }*/
+       
+  /* };*/
+    
+     /*   
+        if (num1 === num2){
+            
+            document.getElementById("result").innerHTML = equalTo; 
+        }
+        
+        else if (num2 !== num1) {
+            document.getElementById("result").innerHTML = notEqualTo;
+        }*/
+       
+        /*else if (num1 === num2) {
+            
+             document.getElementById("result").innerHTML = num2
+        +equalTo;
+        
+        }*/
+  /*     
+       else {
+           document.getElementById("result").innerHTML = num3;
+       }
+   };*/
+   
+   /*collect a number from the user and display on the webpage if the number entered is negative, less than 10 or greater than 10*/
+           /*event1.addEventListener('click',addUp,false);*/
+    /*
+   function addUp(){  
+       
+   var userinput1 = document.getElementById("input1").value;
+        var userinput2 = document.getElementById("input2").value;
+       var userinput3 = document.getElementById("input3").value
+       
+    var a = parseInt(userinput1);
+        var b = parseInt(userinput2);
+        var c = parseInt(userinput3);
+       
+       var lessThan = "Less than 10"
+       var greaterThan = "Greater than 10"
+       var negative = "This is a negative number"
+       var invalid = "This is not a number"
+       
+if (a<10 && a>0) {
+    document.getElementById("result").innerHTML = lessThan;
+}
+       
+       else if (a>10)
+           { 
+           document.getElementById("result").innerHTML = greaterThan;
+           }
+       
+       else if (a<0)
+           {
+               document.getElementById("result").innerHTML = negative;
+           }
+    else {
+        document.getElementById("result").innerHTML = invalid;
+    }
+   }*/
+    
+    /*<!--Collect 2 numbers from the user and display on the webpage if one of them or both of them are greater than 10-->*/
+    
+      event1.addEventListener('click',addUp,false);
+    
+   function addUp(){  
+       
+   var userinput1 = document.getElementById("input1").value;
+        var userinput2 = document.getElementById("input2").value;
+       
+              
+    var a = parseInt(userinput1);
+        var b = parseInt(userinput2);
+       
+       var oneGreater = "One input is greater than 10"
+       var bothGreater = "Both inputs are greater than 10"
+       var neither = "Neither numbers are greater than 10"
+       var invalid = "This is not a number"
+       
+       if (a>=10 && b<10 || a<10 && b>=10)
+           {
+               document.getElementById("result").innerHTML = oneGreater;
+           }
+       
+       else if (a>=10 && b>=10){
+           
+           document.getElementById("result").innerHTML = bothGreater;
+       }
+           
+       else if (a<10 && b<10){
+           
+           document.getElementById("result").innerHTML = neither;
+       }
+       
+       else {
+           document.getElementById("result").innerHTML = invalid;
+       }
+           
+   } 
+    </script>
+    
+    
+
+</body>
+</html>
